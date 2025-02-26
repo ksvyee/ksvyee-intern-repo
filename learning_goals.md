@@ -1,6 +1,6 @@
 # Learn about Focus Bear and set your Goals
 
-## Set your learning goals
+## Set your Learning Goals
 
 ### Reflections
 
