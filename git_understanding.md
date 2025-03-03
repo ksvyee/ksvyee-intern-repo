@@ -1,6 +1,6 @@
 # Learn Git
 
-## Git Concepts: Staging vs. Committing, Branching & Team Collaboration
+## Git Concepts: Staging vs. Committing
 
 ### Summary
 
@@ -16,6 +16,8 @@ Git separates staging and committing to give you more control over what gets sav
 
 You might stage changes without committing when working on multiple files but only want to commit some, when saving progress but aren’t ready to finalize, or when reviewing edits before making a structured commit.
 
+## Branching & Team Collaboration
+
 ### Reflection
 
 **Why is pushing directly to main problematic?**
@@ -29,3 +31,19 @@ Branches let developers work on new features or fixes separately without affecti
 **What happens if two people edit the same file on different branches?**
 
 Git will try to merge the changes. If both people edited the same part of the file, Git won’t know which change to keep and will create a merge conflict. The team will have to manually fix it before merging.
+
+##  Advanced Git Commands & When to Use Them
+
+### Reflection
+
+**What does each command do?**
+
+`git checkout main -- <file>` restores a specific file from main without affecting other changes. `git cherry-pick <commit>` lets you apply just one commit from another branch instead of merging everything. `git log` shows the commit history, helping track who changed what and when. `git blame <file>` shows who last modified each line in a file and when they did it.
+
+**When would you use it in a real project?**
+
+You’d use `git checkout main -- <file>` if you accidentally changed a file and want to get the original version back. `git cherry-pick` is useful if a fix or feature exists in another branch but you don’t want to merge the whole thing. `git log` is helpful when tracking project changes and understanding past commits. `git blame` is great for debugging or checking who last edited a specific part of a file, so you know who to ask about it.
+
+**What surprised you while testing these commands?**
+
+I was surprised by how useful `git cherry-pick` is, it’s like grabbing only the parts you need from another branch.
