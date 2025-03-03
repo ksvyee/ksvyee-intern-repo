@@ -79,3 +79,19 @@ A well-structured PR has a clear title, a detailed description explaining the ch
 **What did you learn from reviewing an open-source PR?**
 
 I learned that PR reviews are more than just checking code—they involve discussions, feedback, and collaboration. Developers suggest improvements, test changes, and sometimes ask for additional modifications before approving the PR.
+
+## Writing Meaningful Commit Messages
+
+### Reflection
+
+**What makes a good commit message?**
+
+A good commit message is short but informative. It should describe what changed and why. The first line should be a clear summary, and if needed, extra details can be added below. Using a consistent format helps everyone understand the commit history easily.
+
+**How does a clear commit message help in team collaboration?**
+
+Clear commit messages make it easier for teammates to understand past changes without digging through code. When fixing bugs or reviewing changes, a well-written commit message tells exactly what was modified and why, saving time and reducing confusion.
+
+**How can poor commit messages cause issues later?**
+
+Bad commit messages make it hard to track changes. If messages are vague. If messages are too long, they become hard to read. Poor commit history can slow down debugging and make teamwork harder.
