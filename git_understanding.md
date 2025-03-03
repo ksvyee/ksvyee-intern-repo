@@ -32,7 +32,7 @@ Branches let developers work on new features or fixes separately without affecti
 
 Git will try to merge the changes. If both people edited the same part of the file, Git won’t know which change to keep and will create a merge conflict. The team will have to manually fix it before merging.
 
-##  Advanced Git Commands & When to Use Them
+## Advanced Git Commands & When to Use Them
 
 ### Reflection
 
@@ -47,3 +47,19 @@ You’d use `git checkout main -- <file>` if you accidentally changed a file and
 **What surprised you while testing these commands?**
 
 I was surprised by how useful `git cherry-pick` is, it’s like grabbing only the parts you need from another branch.
+
+## Understand Git bisect
+
+### Reflection
+
+**What does `git bisect` do?**
+
+`git bisect` helps find which commit introduced a bug by automatically checking commits between a good and bad state.
+
+**When would you use it in a real-world debugging situation?**
+
+You’d use `git bisect` when a bug appears but you’re not sure which commit caused it. Instead of guessing, `git bisect` helps track down the exact commit where things went wrong.
+
+**How does it compare to manually reviewing commits?**
+
+Manually checking commits can be slow and frustrating, especially if there are many commits. `git bisect` speeds up the process by automatically finding the problem commit in just a few steps.
