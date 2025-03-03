@@ -5,3 +5,5 @@ This is a change from conflict-branch.
 This is a change from main branch.
 
 Test
+
+Test2
