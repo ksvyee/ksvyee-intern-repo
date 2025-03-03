@@ -63,3 +63,19 @@ You’d use `git bisect` when a bug appears but you’re not sure which commit c
 **How does it compare to manually reviewing commits?**
 
 Manually checking commits can be slow and frustrating, especially if there are many commits. `git bisect` speeds up the process by automatically finding the problem commit in just a few steps.
+
+## Pull Requests
+
+### Reflection
+
+**Why are PRs important in a team workflow?**
+
+PRs are important because they let developers review code before it gets added to the main project. PRs also allow team members to discuss changes, suggest improvements, and make sure everything is working properly before merging.
+
+**What makes a well-structured PR?**
+
+A well-structured PR has a clear title, a detailed description explaining the changes, and links to related issues if applicable. The code should be clean and easy to review, and the PR should follow the project’s guidelines.
+
+**What did you learn from reviewing an open-source PR?**
+
+I learned that PR reviews are more than just checking code—they involve discussions, feedback, and collaboration. Developers suggest improvements, test changes, and sometimes ask for additional modifications before approving the PR.
