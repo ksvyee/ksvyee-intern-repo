@@ -13,8 +13,11 @@ jobs:
       - name: Install Python Dependencies
         run: pip install appium-python-client
 
-      - name: Start WinAppDriver
-        run: Start-Process -FilePath "C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe"
+      - name: Install Appium
+        run: npm install -g appium
+      
+      - name: Start Appium Server
+        run: appium
       
       - name: Run WinAppDriver Test
         run: python test_appium.py  
