@@ -1,0 +1,20 @@
+name: Run WinAppDriver Test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Python Dependencies
+        run: pip install appium-python-client
+
+      - name: Start WinAppDriver
+        run: start "" "C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe"
+
+      - name: Run WinAppDriver Test
+        run: python test_appium.py  
