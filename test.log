@@ -1,0 +1,45 @@
+2025-03-06 09:58:49,792 - INFO - Running Test #1
+2025-03-06 09:58:49,792 - INFO - Starting test execution
+2025-03-06 09:59:04,416 - ERROR - Test failed: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at errorFromW3CJsonCode (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1110:25)
+    at ProxyRequestError.getActualError (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:979:14)
+    at WADProxy.command (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:351:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at WinAppDriver.sendCommand (C:\Users\Dell\.appium\node_modules\appium-windows-driver\lib\winappdriver.js:259:12)
+    at WindowsDriver.findElOrEls (C:\Users\Dell\.appium\node_modules\appium-windows-driver\lib\commands\find.js:15:10)
+    at WindowsDriver.findElOrElsWithProcessing (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at WindowsDriver.findElement (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+2025-03-06 09:59:04,548 - INFO - Screenshot saved: failure_screenshot.png
+2025-03-06 09:59:05,010 - INFO - Driver closed.
+2025-03-06 09:59:05,010 - INFO - Running Test #2
+2025-03-06 09:59:05,010 - INFO - Starting test execution
+2025-03-06 09:59:17,696 - ERROR - Test failed: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at errorFromW3CJsonCode (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1110:25)
+    at ProxyRequestError.getActualError (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:979:14)
+    at WADProxy.command (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:351:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at WinAppDriver.sendCommand (C:\Users\Dell\.appium\node_modules\appium-windows-driver\lib\winappdriver.js:259:12)
+    at WindowsDriver.findElOrEls (C:\Users\Dell\.appium\node_modules\appium-windows-driver\lib\commands\find.js:15:10)
+    at WindowsDriver.findElOrElsWithProcessing (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at WindowsDriver.findElement (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+2025-03-06 09:59:17,831 - INFO - Screenshot saved: failure_screenshot.png
+2025-03-06 09:59:17,935 - INFO - Driver closed.
+2025-03-06 09:59:17,935 - INFO - Running Test #3
+2025-03-06 09:59:17,937 - INFO - Starting test execution
+2025-03-06 09:59:31,665 - ERROR - Test failed: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at errorFromW3CJsonCode (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1110:25)
+    at ProxyRequestError.getActualError (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:979:14)
+    at WADProxy.command (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\jsonwp-proxy\proxy.js:351:19)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at WinAppDriver.sendCommand (C:\Users\Dell\.appium\node_modules\appium-windows-driver\lib\winappdriver.js:259:12)
+    at WindowsDriver.findElOrEls (C:\Users\Dell\.appium\node_modules\appium-windows-driver\lib\commands\find.js:15:10)
+    at WindowsDriver.findElOrElsWithProcessing (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at WindowsDriver.findElement (C:\Users\Dell\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+2025-03-06 09:59:31,780 - INFO - Screenshot saved: failure_screenshot.png
+2025-03-06 09:59:31,902 - INFO - Driver closed.
