@@ -8,28 +8,52 @@ from selenium.webdriver.support import expected_conditions as EC
 MAX_RETRIES = 3
 TEST_RUNS = 5
 
-def run_test():
+# Page Object Model (POM) for Notepad
+class NotepadPage:
+    def __init__(self, driver):
+        self.driver = driver
+        self.wait = WebDriverWait(driver, 10)
+
+    def get_text_area(self):
+        """Wait for and return the text area element."""
+        return self.wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "RichEditD2DPT")))
+
+    def enter_text(self, text):
+        """Enter text into the Notepad text area."""
+        text_area = self.get_text_area()
+        text_area.send_keys(text)
+
+# Helper function for retries
+def retry_operation(operation, retries=MAX_RETRIES, delay=2):
+    """Retries a given operation with a specified number of attempts."""
+    for attempt in range(retries):
+        try:
+            return operation()
+        except Exception as e:
+            print(f"Attempt {attempt+1}/{retries} failed: {e}")
+            time.sleep(delay)
+    raise Exception("Operation failed after maximum retries")
+
+# Setup driver function
+def setup_driver():
+    """Initialize the Appium driver for Notepad."""
     options = WindowsOptions()
     options.app = "notepad.exe"
+    return webdriver.Remote("http://127.0.0.1:4723", options=options)
 
-    driver = webdriver.Remote("http://127.0.0.1:4723", options=options)
-    wait = WebDriverWait(driver, 10)
-    retries = 0
+# Main test function
+def run_test():
+    """Run the Notepad automation test."""
+    driver = setup_driver()
+    notepad = NotepadPage(driver)
 
-    while retries < MAX_RETRIES:
-        try:
-            text_area = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "RichEditD2DPT")))
-            text_area.send_keys("Hello, World!")
-            print("Test passed!")
-            break
-        except Exception as e:
-            retries += 1
-            print(f"Retry {retries}/{MAX_RETRIES}: {e}")
-            time.sleep(2)
-    else:
-        print("Test failed after maximum retries.")
-
-    driver.quit()
+    try:
+        retry_operation(lambda: notepad.enter_text("Hello, World!"))
+        print("Test passed!")
+    except Exception as e:
+        print(f"Test failed: {e}")
+    finally:
+        driver.quit()
 
 for i in range(TEST_RUNS):
     print(f"\nRunning Test #{i+1}")
